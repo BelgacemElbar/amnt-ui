@@ -1,0 +1,200 @@
+{
+  "color": {
+    "primary": {
+      "$type": "color",
+      "$value": "#000000"
+    },
+    "on-primary": {
+      "$type": "color",
+      "$value": "#FFFFFF"
+    },
+    "primary-container": {
+      "$type": "color",
+      "$value": "#EBEBEB"
+    },
+    "on-primary-container": {
+      "$type": "color",
+      "$value": "#000000"
+    },
+    "secondary": {
+      "$type": "color",
+      "$value": "#000000"
+    },
+    "on-secondary": {
+      "$type": "color",
+      "$value": "#FFFFFF"
+    },
+    "secondary-container": {
+      "$type": "color",
+      "$value": "#EBEBEB"
+    },
+    "on-secondary-container": {
+      "$type": "color",
+      "$value": "#000000"
+    },
+    "tertiary": {
+      "$type": "color",
+      "$value": "#5C5C5C"
+    },
+    "on-tertiary": {
+      "$type": "color",
+      "$value": "#FFFFFF"
+    },
+    "tertiary-container": {
+      "$type": "color",
+      "$value": "#EBEBEB"
+    },
+    "on-tertiary-container": {
+      "$type": "color",
+      "$value": "#000000"
+    },
+    "error": {
+      "$type": "color",
+      "$value": "#D42A1F"
+    },
+    "on-error": {
+      "$type": "color",
+      "$value": "#FFFFFF"
+    },
+    "error-container": {
+      "$type": "color",
+      "$value": "#FEEDEB"
+    },
+    "on-error-container": {
+      "$type": "color",
+      "$value": "#7A1C14"
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "#FFFFFF"
+    },
+    "on-surface": {
+      "$type": "color",
+      "$value": "#000000"
+    },
+    "surface-variant": {
+      "$type": "color",
+      "$value": "#F2F2F2"
+    },
+    "on-surface-variant": {
+      "$type": "color",
+      "$value": "#5C5C5C"
+    },
+    "surface-dim": {
+      "$type": "color",
+      "$value": "#EBEBEB"
+    },
+    "surface-bright": {
+      "$type": "color",
+      "$value": "#FFFFFF"
+    },
+    "surface-container-lowest": {
+      "$type": "color",
+      "$value": "#FFFFFF"
+    },
+    "surface-container-low": {
+      "$type": "color",
+      "$value": "#F7F7F7"
+    },
+    "surface-container": {
+      "$type": "color",
+      "$value": "#F2F2F2"
+    },
+    "surface-container-high": {
+      "$type": "color",
+      "$value": "#EBEBEB"
+    },
+    "surface-container-highest": {
+      "$type": "color",
+      "$value": "#E3E3E3"
+    },
+    "surface-tint": {
+      "$type": "color",
+      "$value": "#000000"
+    },
+    "background": {
+      "$type": "color",
+      "$value": "#FFFFFF"
+    },
+    "on-background": {
+      "$type": "color",
+      "$value": "#000000"
+    },
+    "outline": {
+      "$type": "color",
+      "$value": "#737373"
+    },
+    "outline-variant": {
+      "$type": "color",
+      "$value": "#E3E3E3"
+    },
+    "inverse-surface": {
+      "$type": "color",
+      "$value": "#000000"
+    },
+    "inverse-on-surface": {
+      "$type": "color",
+      "$value": "#FFFFFF"
+    },
+    "inverse-primary": {
+      "$type": "color",
+      "$value": "#FFFFFF"
+    },
+    "scrim": {
+      "$type": "color",
+      "$value": "#000000"
+    },
+    "shadow": {
+      "$type": "color",
+      "$value": "#000000"
+    },
+    "premium": {
+      "$type": "color",
+      "$value": "#000000"
+    },
+    "on-premium": {
+      "$type": "color",
+      "$value": "#FFFFFF"
+    },
+    "premium-container": {
+      "$type": "color",
+      "$value": "#EBEBEB"
+    },
+    "on-premium-container": {
+      "$type": "color",
+      "$value": "#000000"
+    },
+    "positive": {
+      "$type": "color",
+      "$value": "#137A3E"
+    },
+    "on-positive": {
+      "$type": "color",
+      "$value": "#FFFFFF"
+    },
+    "positive-container": {
+      "$type": "color",
+      "$value": "#E6F6EC"
+    },
+    "on-positive-container": {
+      "$type": "color",
+      "$value": "#0B4A25"
+    },
+    "rare": {
+      "$type": "color",
+      "$value": "#0B7285"
+    },
+    "on-rare": {
+      "$type": "color",
+      "$value": "#FFFFFF"
+    },
+    "rare-container": {
+      "$type": "color",
+      "$value": "#E3F6F9"
+    },
+    "on-rare-container": {
+      "$type": "color",
+      "$value": "#08414C"
+    }
+  }
+}

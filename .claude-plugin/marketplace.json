@@ -1,0 +1,11 @@
+{
+  "name": "amnt",
+  "owner": { "name": "AMNT", "url": "https://amnt.io" },
+  "plugins": [
+    {
+      "name": "amnt-ui",
+      "source": "./plugin",
+      "description": "Build UI with AMNT UI (Ink): 50+ Next.js + Tailwind parts, colour roles, phone first. Installs and uses the design system the right way."
+    }
+  ]
+}

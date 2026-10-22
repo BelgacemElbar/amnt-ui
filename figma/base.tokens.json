@@ -1,0 +1,394 @@
+{
+  "space": {
+    "0": {
+      "$type": "number",
+      "$value": 0
+    },
+    "1": {
+      "$type": "number",
+      "$value": 4
+    },
+    "2": {
+      "$type": "number",
+      "$value": 8
+    },
+    "3": {
+      "$type": "number",
+      "$value": 12
+    },
+    "4": {
+      "$type": "number",
+      "$value": 16
+    },
+    "5": {
+      "$type": "number",
+      "$value": 20
+    },
+    "6": {
+      "$type": "number",
+      "$value": 24
+    },
+    "7": {
+      "$type": "number",
+      "$value": 28
+    },
+    "8": {
+      "$type": "number",
+      "$value": 32
+    },
+    "10": {
+      "$type": "number",
+      "$value": 40
+    },
+    "12": {
+      "$type": "number",
+      "$value": 48
+    },
+    "14": {
+      "$type": "number",
+      "$value": 56
+    },
+    "16": {
+      "$type": "number",
+      "$value": 64
+    },
+    "20": {
+      "$type": "number",
+      "$value": 80
+    },
+    "24": {
+      "$type": "number",
+      "$value": 96
+    }
+  },
+  "radius": {
+    "none": {
+      "$type": "number",
+      "$value": 0
+    },
+    "extra-small": {
+      "$type": "number",
+      "$value": 0
+    },
+    "small": {
+      "$type": "number",
+      "$value": 0
+    },
+    "medium": {
+      "$type": "number",
+      "$value": 0
+    },
+    "large": {
+      "$type": "number",
+      "$value": 0
+    },
+    "extra-large": {
+      "$type": "number",
+      "$value": 0
+    },
+    "full": {
+      "$type": "number",
+      "$value": 9999
+    }
+  },
+  "type": {
+    "display-xl": {
+      "size": {
+        "$type": "number",
+        "$value": null
+      },
+      "line": {
+        "$type": "number",
+        "$value": 1.05
+      },
+      "weight": {
+        "$type": "number",
+        "$value": 700
+      },
+      "tracking": {
+        "$type": "string",
+        "$value": "0em"
+      }
+    },
+    "display-lg": {
+      "size": {
+        "$type": "number",
+        "$value": null
+      },
+      "line": {
+        "$type": "number",
+        "$value": 1.1
+      },
+      "weight": {
+        "$type": "number",
+        "$value": 700
+      },
+      "tracking": {
+        "$type": "string",
+        "$value": "0em"
+      }
+    },
+    "display-md": {
+      "size": {
+        "$type": "number",
+        "$value": null
+      },
+      "line": {
+        "$type": "number",
+        "$value": 1.12
+      },
+      "weight": {
+        "$type": "number",
+        "$value": 700
+      },
+      "tracking": {
+        "$type": "string",
+        "$value": "0em"
+      }
+    },
+    "display-sm": {
+      "size": {
+        "$type": "number",
+        "$value": null
+      },
+      "line": {
+        "$type": "number",
+        "$value": 1.15
+      },
+      "weight": {
+        "$type": "number",
+        "$value": 700
+      },
+      "tracking": {
+        "$type": "string",
+        "$value": "0em"
+      }
+    },
+    "headline-lg": {
+      "size": {
+        "$type": "number",
+        "$value": 30
+      },
+      "line": {
+        "$type": "number",
+        "$value": 38
+      },
+      "weight": {
+        "$type": "number",
+        "$value": 600
+      },
+      "tracking": {
+        "$type": "string",
+        "$value": "-0.02em"
+      }
+    },
+    "headline-md": {
+      "size": {
+        "$type": "number",
+        "$value": 24
+      },
+      "line": {
+        "$type": "number",
+        "$value": 32
+      },
+      "weight": {
+        "$type": "number",
+        "$value": 600
+      },
+      "tracking": {
+        "$type": "string",
+        "$value": "-0.02em"
+      }
+    },
+    "headline-sm": {
+      "size": {
+        "$type": "number",
+        "$value": 20
+      },
+      "line": {
+        "$type": "number",
+        "$value": 28
+      },
+      "weight": {
+        "$type": "number",
+        "$value": 600
+      },
+      "tracking": {
+        "$type": "string",
+        "$value": "-0.015em"
+      }
+    },
+    "title-lg": {
+      "size": {
+        "$type": "number",
+        "$value": 17
+      },
+      "line": {
+        "$type": "number",
+        "$value": 26
+      },
+      "weight": {
+        "$type": "number",
+        "$value": 600
+      },
+      "tracking": {
+        "$type": "string",
+        "$value": "-0.01em"
+      }
+    },
+    "title-md": {
+      "size": {
+        "$type": "number",
+        "$value": 15
+      },
+      "line": {
+        "$type": "number",
+        "$value": 24
+      },
+      "weight": {
+        "$type": "number",
+        "$value": 600
+      },
+      "tracking": {
+        "$type": "string",
+        "$value": "-0.01em"
+      }
+    },
+    "title-sm": {
+      "size": {
+        "$type": "number",
+        "$value": 13
+      },
+      "line": {
+        "$type": "number",
+        "$value": 20
+      },
+      "weight": {
+        "$type": "number",
+        "$value": 600
+      },
+      "tracking": {
+        "$type": "string",
+        "$value": "0em"
+      }
+    },
+    "body-lg": {
+      "size": {
+        "$type": "number",
+        "$value": 15
+      },
+      "line": {
+        "$type": "number",
+        "$value": 26
+      },
+      "weight": {
+        "$type": "number",
+        "$value": 400
+      },
+      "tracking": {
+        "$type": "string",
+        "$value": "-0.01em"
+      }
+    },
+    "body-md": {
+      "size": {
+        "$type": "number",
+        "$value": 13
+      },
+      "line": {
+        "$type": "number",
+        "$value": 22
+      },
+      "weight": {
+        "$type": "number",
+        "$value": 400
+      },
+      "tracking": {
+        "$type": "string",
+        "$value": "-0.01em"
+      }
+    },
+    "body-sm": {
+      "size": {
+        "$type": "number",
+        "$value": 12
+      },
+      "line": {
+        "$type": "number",
+        "$value": 18
+      },
+      "weight": {
+        "$type": "number",
+        "$value": 400
+      },
+      "tracking": {
+        "$type": "string",
+        "$value": "0em"
+      }
+    },
+    "label-lg": {
+      "size": {
+        "$type": "number",
+        "$value": 13
+      },
+      "line": {
+        "$type": "number",
+        "$value": 20
+      },
+      "weight": {
+        "$type": "number",
+        "$value": 500
+      },
+      "tracking": {
+        "$type": "string",
+        "$value": "-0.01em"
+      }
+    },
+    "label-md": {
+      "size": {
+        "$type": "number",
+        "$value": 12
+      },
+      "line": {
+        "$type": "number",
+        "$value": 16
+      },
+      "weight": {
+        "$type": "number",
+        "$value": 500
+      },
+      "tracking": {
+        "$type": "string",
+        "$value": "0em"
+      }
+    },
+    "label-sm": {
+      "size": {
+        "$type": "number",
+        "$value": 11
+      },
+      "line": {
+        "$type": "number",
+        "$value": 16
+      },
+      "weight": {
+        "$type": "number",
+        "$value": 500
+      },
+      "tracking": {
+        "$type": "string",
+        "$value": "0em"
+      }
+    }
+  },
+  "font": {
+    "body": {
+      "$type": "string",
+      "$value": "Martian Mono"
+    },
+    "mono": {
+      "$type": "string",
+      "$value": "Martian Mono"
+    }
+  }
+}

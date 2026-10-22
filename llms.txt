@@ -1,0 +1,31 @@
+# AMNT UI (Ink)
+
+> A free (MIT) design system for Next.js + Tailwind 3: 50+ accessible React components, Material 3 colour roles, light and dark, 339 Material Symbols icons, app shells. Black and white, square corners, phone first. No component library underneath.
+
+Install: `npx shadcn@latest add https://raw.githubusercontent.com/BelgacemElbar/amnt-ui/main/public/r/ink.json`
+Import: `import { Button, DataTable, DatePicker } from "@/ui"`, icons from `@/ui/symbols`.
+
+## Docs
+- [README](https://github.com/BelgacemElbar/amnt-ui/blob/main/README.md): what's inside, install, Figma
+- [AGENTS.md](https://github.com/BelgacemElbar/amnt-ui/blob/main/AGENTS.md): rules and which part to use for what
+- [Component index](https://github.com/BelgacemElbar/amnt-ui/blob/main/ui/index.ts): every export with its props types
+
+## Parts
+- Buttons: Button, ButtonLink, IconButton, Fab, Chip, ChipGroup
+- Inputs: TextField, Textarea, Select, Search, Checkbox, Radio, RadioGroup, Switch, Slider, SegmentedButton, CodeInput, ColorField, ColorPicker
+- Pickers: DatePicker, DateRangePicker, Calendar, MultiSelect, Combobox, IconPicker, IconGrid
+- Upload: FileUpload, sendFile
+- Data: DataTable, Pagination, Table, List, ListItem
+- Charts: LineChart, BarChart, DonutChart, Sparkline, Metric
+- Popups: Menu, MenuItem, MenuSub, Popover, Sheet, Window, CommandMenu, Tooltip, toast/Toaster, useConfirm, NotificationBell
+- Navigation: Tabs, Breadcrumb, Steps, Accordion, NavigationBar, NavigationRail, NavigationDrawer, NavList
+- Shells and layouts: SidebarShell, TopbarShell, AppLayout, SettingsLayout, DetailLayout, AuthLayout, ListDetail, SupportingPane
+- Feedback: Alert, Banner, EmptyState, ErrorState, Skeleton, Progress, Spinner, Status, Badge
+- People: Avatar, AvatarGroup, Person
+- Structure: Card, Panel, Section, PageHeader, SettingsGroup, SettingRow, ActionRow
+
+## Rules
+- Colours are roles (bg-surface-container, text-on-surface, bg-primary text-on-primary), never hex.
+- Type: text-display|headline|title|body|label-sm|md|lg. Shapes: rounded-small|medium|large|full.
+- Breakpoints: medium: 600, expanded: 840, large: 1200, xlarge: 1600.
+- One UI source (@/ui); no second component or icon library.
