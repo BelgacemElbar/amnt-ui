@@ -57,7 +57,7 @@ const M3_COLORS = Object.fromEntries(
  *   export default { presets: [ink], content: ["./src/<every folder>/<every .tsx file>"] };
  */
 const config = {
-  darkMode: ["class"],
+  darkMode: "class",
   // `hover:` only where a real pointer exists. On a phone a tap left every
   // button's hover fill stuck on (the pale circle behind the menu icon).
   future: { hoverOnlyWhenSupported: true },

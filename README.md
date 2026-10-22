@@ -45,17 +45,32 @@ So dark mode and your own brand colour come for free.
 npx shadcn@latest add https://raw.githubusercontent.com/BelgacemElbar/amnt-ui/main/public/r/ink.json
 ```
 
-The parts land in `src/ui`, plus `tailwind.preset.ts`. Then:
+The parts land in `src/ui`, and the Tailwind preset in `src/tailwind.preset.ts`. Then wire it up:
 
-1. **Tailwind:** in `tailwind.config.ts`, add `presets: [ink]` (`import ink from "./tailwind.preset"`).
-2. **CSS:** at the top of `globals.css`:
+**Tailwind 4** (new Next.js projects). Tested with `create-next-app@15` + `npx next build`.
+1. `npm i -D tailwindcss-animate @tailwindcss/typography`
+2. `tailwind.config.ts` at the project root:
+   ```ts
+   import ink from "./src/tailwind.preset";
+   export default { presets: [ink], content: ["./src/**/*.{ts,tsx}"] };
+   ```
+3. Top of `src/app/globals.css`:
    ```css
    @import "../ui/tokens/tokens.css";
    @import "../ui/tokens/legacy.css";
    @import "../ui/ui.css";
+   @import "tailwindcss";
+   @config "../../tailwind.config.ts";
    ```
-3. **Paths:** `tsconfig.json` needs `"@/*": ["./src/*"]` (Next.js has it by default).
-4. **Use it:** `import { Button, DataTable, DatePicker } from "@/ui"`.
+
+**Tailwind 3.3+:** put `presets: [ink]` in your existing `tailwind.config`, then add the three `@import` lines above `@tailwind base`.
+
+Then use it:
+```tsx
+import { Button, DataTable, DatePicker } from "@/ui";
+import { Rocket } from "@/ui/symbols";
+```
+`tsconfig.json` needs `"@/*": ["./src/*"]`, which Next.js sets up by default.
 
 ### 2. Claude Code plugin
 
@@ -68,7 +83,7 @@ Then just ask: *"add a settings page with a data table and a date range picker"*
 
 ### 3. Copy the folder
 
-Copy `ui/` to `src/ui` and `tailwind.preset.ts` to your project root, then do steps 1–4 above.
+Copy `ui/` to `src/ui` and `tailwind.preset.ts` to `src/`, then wire it up as above.
 
 ---
 
