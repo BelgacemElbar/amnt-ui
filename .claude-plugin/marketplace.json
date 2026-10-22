@@ -1,6 +1,10 @@
 {
   "name": "amnt",
-  "owner": { "name": "AMNT", "url": "https://amnt.io" },
+  "description": "AMNT's plugins for Claude Code: build UI with the free AMNT UI (Ink) design system.",
+  "owner": {
+    "name": "AMNT",
+    "url": "https://amnt.io"
+  },
   "plugins": [
     {
       "name": "amnt-ui",
