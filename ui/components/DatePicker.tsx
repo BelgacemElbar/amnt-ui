@@ -229,6 +229,7 @@ export function DatePicker({ label, empty = "Pick a date", name, value, onChange
                 onOpenChange={setOpen}
                 label={label}
                 className="max-w-none"
+                clientOnly
                 trigger={(p) => <FieldButton {...p} label={label} text={formatDay(value, locale)} empty={empty} />}
             >
                 <Calendar {...cal} locale={locale} value={value} onChange={(d) => { onChange?.(d); setOpen(false); }} />
@@ -260,7 +261,7 @@ export function DateRangePicker({ label, empty = "Pick dates", range, onRangeCha
     const text = range?.from ? `${formatDay(range.from, locale)} – ${range.to ? formatDay(range.to, locale) : "…"}` : "";
     return (
         <div className={cn("min-w-0", className)}>
-            <Popover open={open} onOpenChange={setOpen} label={label} className="max-w-none" trigger={(p) => <FieldButton {...p} label={label} text={text} empty={empty} />}>
+            <Popover open={open} onOpenChange={setOpen} label={label} className="max-w-none" clientOnly trigger={(p) => <FieldButton {...p} label={label} text={text} empty={empty} />}>
                 <div className="flex flex-col gap-2 medium:flex-row">
                     <ul className="flex flex-wrap gap-1 medium:w-36 medium:flex-col">
                         {presets.map((p) => (

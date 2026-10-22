@@ -42,7 +42,7 @@ const oldStep = (n: string): [string, { lineHeight: string; letterSpacing: strin
  * The M3 system colour roles, as `bg-*` / `text-*` / `border-*` / `fill-*`.
  * `background` and `on-background` are deliberately absent: M3 2025 resolves
  * them to the same values as `surface` / `on-surface`, and `bg-background`
- * already means the legacy shadcn colour on 51 not-yet-migrated call sites.
+ * already means the legacy HSL colour on 51 not-yet-migrated call sites.
  */
 const M3_COLORS = Object.fromEntries(
   [...Object.keys(m3.colorRoles).filter(r => r !== "background" && r !== "on-background"), ...Object.keys(m3.customColors).flatMap(m3.customRoleNames)].map(r => [r, md(r)]),
@@ -204,7 +204,7 @@ const config = {
           "medal-silver": "rgb(var(--color-mint-medal-silver-rgb) / <alpha-value>)",
           "medal-bronze": "rgb(var(--color-mint-medal-bronze-rgb) / <alpha-value>)",
         },
-        // The shadcn HSL layer. `primary` and `secondary` are gone from here —
+        // The legacy HSL layer. `primary` and `secondary` are gone from here —
         // those names now belong to M3, and their old call sites were swept to
         // `ink` / `ink-2`.
         ink:        { DEFAULT: "hsl(var(--primary))", 2: "hsl(var(--secondary))" },

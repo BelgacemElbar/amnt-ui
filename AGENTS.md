@@ -9,17 +9,17 @@ Import every UI part from `@/ui`. Write colours as roles, never values. Phone fi
 ## 🚀 Install into a project
 
 ```bash
-npx shadcn@latest add https://raw.githubusercontent.com/BelgacemElbar/amnt-ui/main/public/r/ink.json
+npx amnt add
 ```
 
-Then do these three things:
-1. Add the preset in `tailwind.config`: `presets: [ink]`.
-2. Import the 3 CSS files at the top of `globals.css`: `ui/tokens/tokens.css`, `ui/tokens/legacy.css`, `ui/ui.css`.
-3. Make sure `@/*` maps to `./src/*` in `tsconfig.json`.
+It copies the parts into `src/ui`, adds the Ink preset to `tailwind.config`, imports the 3 CSS files in `globals.css` (Tailwind 3.3+ or 4) and installs the packages. If it prints "Still to do by hand", do those steps.
+
+- Some parts only: `npx amnt add button date-picker` (brings the files they need).
+- Every part name: `npx amnt list`.
 
 ## 🔴 Rules
 
-1. **One source of UI.** `import { Button, DataTable } from "@/ui"`. Never add shadcn, Radix, MUI, Chakra, lucide or a second icon set next to it.
+1. **One source of UI.** `import { Button, DataTable } from "@/ui"`. Never add a second component library (Radix, MUI, Chakra) or a second icon set (lucide) next to it.
 2. **Colours are roles.** Use `bg-surface`, `bg-surface-container`, `text-on-surface`, `text-on-surface-variant`, `bg-primary text-on-primary`, `bg-inverse-surface`, `text-error`. Never `#hex`, `rgb()`, `text-gray-500`.
 3. **Type is a scale.** Use `text-display-*`, `text-headline-*`, `text-title-*`, `text-body-*`, `text-label-*` (sizes `sm`, `md`, `lg`). Never `text-[13px]`.
 4. **Shapes are named.** Use `rounded-small`, `rounded-medium`, `rounded-large`, `rounded-full`. Ink draws them square on purpose.

@@ -39,17 +39,29 @@ So dark mode and your own brand colour come for free.
 
 ## 🚀 Install
 
-### 1. One command (any project, any agent)
+### 1. One command
 
 ```bash
-npx shadcn@latest add https://raw.githubusercontent.com/BelgacemElbar/amnt-ui/main/public/r/ink.json
+npx amnt add
 ```
 
-The parts land in `src/ui`, and the Tailwind preset in `src/tailwind.preset.ts`. Then wire it up:
+That's it. It does all three steps for you:
+1. Copies the parts into `src/ui` (or `ui` if you have no `src` folder).
+2. Wires **Tailwind 3.3+ or 4**: the Ink preset in `tailwind.config`, three imports in `globals.css`.
+3. Installs the 4 small packages the parts need.
 
-**Tailwind 4** (new Next.js projects). Tested with `create-next-app@15` + `npx next build`.
-1. `npm i -D tailwindcss-animate @tailwindcss/typography`
-2. `tailwind.config.ts` at the project root:
+Only want some parts? `npx amnt add button date-picker` brings just those, plus the files they need. See every name with `npx amnt list`.
+
+Your own changed files are kept; run it again any time to update. The tool has no dependencies: [cli/amnt.mjs](cli/amnt.mjs).
+
+<details>
+<summary><b>By hand</b> (what the command does)</summary>
+
+Copy `ui/` to `src/ui` and `tailwind.preset.ts` to `src/`. Then:
+
+**Tailwind 4:**
+1. `npm i clsx tailwind-merge@1 && npm i -D tailwindcss-animate @tailwindcss/typography`
+2. `tailwind.config.mts` at the project root:
    ```ts
    import ink from "./src/tailwind.preset";
    export default { presets: [ink], content: ["./src/**/*.{ts,tsx}"] };
@@ -60,10 +72,12 @@ The parts land in `src/ui`, and the Tailwind preset in `src/tailwind.preset.ts`.
    @import "../ui/tokens/legacy.css";
    @import "../ui/ui.css";
    @import "tailwindcss";
-   @config "../../tailwind.config.ts";
+   @config "../../tailwind.config.mts";
    ```
 
-**Tailwind 3.3+:** put `presets: [ink]` in your existing `tailwind.config`, then add the three `@import` lines above `@tailwind base`.
+**Tailwind 3.3+:** put `presets: [ink]` in your existing `tailwind.config`, add `"./src/ui/**/*.{ts,tsx}"` to its `content`, then add the three `@import` lines above `@tailwind base`.
+
+</details>
 
 Then use it:
 ```tsx
@@ -81,9 +95,9 @@ claude plugin install amnt-ui@amnt
 
 Then just ask: *"add a settings page with a data table and a date range picker"*. Claude knows the parts and the rules.
 
-### 3. Copy the folder
+### 3. Other tools
 
-Copy `ui/` to `src/ui` and `tailwind.preset.ts` to `src/`, then wire it up as above.
+Every part is in one plain JSON file: [`public/r/ink.json`](public/r/ink.json) (file paths, contents, packages). Tools that add components from a URL can read it.
 
 ---
 

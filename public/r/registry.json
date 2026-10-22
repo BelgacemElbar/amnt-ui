@@ -1,5 +1,4 @@
 {
-  "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "amnt-ui",
   "homepage": "https://github.com/BelgacemElbar/amnt-ui",
   "items": [
@@ -7,7 +6,7 @@
       "name": "ink",
       "type": "registry:block",
       "title": "AMNT UI (Ink)",
-      "description": "The whole Ink design system: 50+ components, tokens, 339 icons, app shells. Next.js + Tailwind 3."
+      "description": "The whole Ink design system: 50+ components, tokens, 339 icons, app shells. Next.js + Tailwind 3.3+ or 4."
     }
   ]
 }
